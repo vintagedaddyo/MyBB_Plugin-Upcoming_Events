@@ -46,6 +46,7 @@ Updated to version 1.32 for MyBB 1.8.x usage by: Vintagedaddyo
 - englishgb
 - espanol
 - french
+- italiano
 
 Compatibility:
 

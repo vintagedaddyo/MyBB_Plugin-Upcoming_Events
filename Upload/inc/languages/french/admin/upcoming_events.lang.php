@@ -48,7 +48,7 @@ $l['upcoming_events'] = "evenements a venir";
 $l['upcoming_events_desc'] = "Affiche les evenements e venir dans l index du forum et sur la page du portail.";
 
 $l['setting_group_upcoming_events'] = $l['upcoming_events'];
-$l['setting_group_upcoming_events_desc'] = "Ici vous pouvez configurer le plug-in Evenements àavenir.";
+$l['setting_group_upcoming_events_desc'] = "Ici vous pouvez configurer le plug-in Evenements aavenir.";
 
 $l['setting_upcoming_events_timerange'] = "Afficher la plage horaire";
 $l['setting_upcoming_events_timerange_desc'] = "Combien de jours a l avance les evenements doivent-ils etre affiches dans le calendrier?";
@@ -60,6 +60,6 @@ $l['setting_upcoming_events_showindex'] = "Afficher sur l index";
 $l['setting_upcoming_events_showindex_desc'] = "Desactive les evenements a venir sur la page d index du forum.";
 
 $l['setting_upcoming_events_showportal'] = "Afficher sur le portail";
-$l['setting_upcoming_events_showportal_desc'] = "Événements a venir désactives sur la page du portail.";
+$l['setting_upcoming_events_showportal_desc'] = "Evenements a venir desactives sur la page du portail.";
 
 ?>

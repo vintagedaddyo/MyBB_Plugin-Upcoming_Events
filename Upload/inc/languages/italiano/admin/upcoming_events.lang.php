@@ -33,10 +33,10 @@
 
 // Plugin info
 
-$l['upcoming_events_PName'] = 'Upcoming Events';
-$l['upcoming_events_PDesc'] = 'Shows upcoming events at the forum index and at the portal page.';
+$l['upcoming_events_PName'] = 'Prossimi eventi';
+$l['upcoming_events_PDesc'] = 'Mostra gli eventi imminenti nell indice del forum e nella pagina del portale.';
 $l['upcoming_events_PWeb'] = 'http://community.mybb.com/user-6029.html';
-$l['upcoming_events_PAuth'] = 'Lorus & updated by Vintagedaddyo';
+$l['upcoming_events_PAuth'] = 'Lorus & Aggiornato da Vintagedaddyo';
 $l['upcoming_events_PAuthSite'] = 'http://community.mybb.com/user-6029.html';
 $l['upcoming_events_PVer'] = '1.32';
 $l['upcoming_events_PGUID'] = 'b364c7af6f5fc2440c725fb91197bbd5';
@@ -44,22 +44,22 @@ $l['upcoming_events_PCompat'] = '18*';
 
 // Plugin Settings
 
-$l['upcoming_events'] = "Upcoming Events";
-$l['upcoming_events_desc'] = "Shows upcoming events at the forum index and at the portal page.";
+$l['upcoming_events'] = "Prossimi eventi";
+$l['upcoming_events_desc'] = "Mostra gli eventi imminenti nell indice del forum e nella pagina del portale.";
 
 $l['setting_group_upcoming_events'] = $l['upcoming_events'];
-$l['setting_group_upcoming_events_desc'] = "Here you can configure Upcoming Events plugin.";
+$l['setting_group_upcoming_events_desc'] = "Qui puoi configurare il plug-in per i prossimi eventi.";
 
-$l['setting_upcoming_events_timerange'] = "Display timerange";
-$l['setting_upcoming_events_timerange_desc'] = "How many days in advance should events are to be displayed from the calendar?";
+$l['setting_upcoming_events_timerange'] = "Visualizza intervallo di tempo";
+$l['setting_upcoming_events_timerange_desc'] = "Quanti giorni in anticipo gli eventi devono essere visualizzati dal calendario?";
 
-$l['setting_upcoming_events_maxdisplay'] = "Maximum Events visible";
-$l['setting_upcoming_events_maxdisplay_desc'] = "How many events should be visible (max.)?";
+$l['setting_upcoming_events_maxdisplay'] = "Eventi massimi visibili";
+$l['setting_upcoming_events_maxdisplay_desc'] = "Quanti eventi dovrebbero essere visibili (max.)?";
 
-$l['setting_upcoming_events_showindex'] = "Show on Index";
-$l['setting_upcoming_events_showindex_desc'] = "Disables upcoming events on forum index page.";
+$l['setting_upcoming_events_showindex'] = "Mostra sull indice";
+$l['setting_upcoming_events_showindex_desc'] = "Disattiva gli eventi imminenti nella pagina dell indice del forum.";
 
-$l['setting_upcoming_events_showportal'] = "Show on Portal";
-$l['setting_upcoming_events_showportal_desc'] = "Disables upcoming events on portal page.";
+$l['setting_upcoming_events_showportal'] = "Mostra sul portale";
+$l['setting_upcoming_events_showportal_desc'] = "Eventi imminenti disattivati nella pagina del portale.";
 
 ?>

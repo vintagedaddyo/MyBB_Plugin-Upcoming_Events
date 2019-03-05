@@ -57,9 +57,9 @@ $l['setting_upcoming_events_maxdisplay'] = "Maximum Events visible";
 $l['setting_upcoming_events_maxdisplay_desc'] = "How many events should be visible (max.)?";
 
 $l['setting_upcoming_events_showindex'] = "Show on Index";
-$l['setting_upcoming_events_showindex_desc'] = "De-/activates upcoming events on forum index page.";
+$l['setting_upcoming_events_showindex_desc'] = "Disables upcoming events on forum index page.";
 
 $l['setting_upcoming_events_showportal'] = "Show on Portal";
-$l['setting_upcoming_events_showportal_desc'] = "De-/activates upcoming events on portal page.";
+$l['setting_upcoming_events_showportal_desc'] = "Disables upcoming events on portal page.";
 
 ?>

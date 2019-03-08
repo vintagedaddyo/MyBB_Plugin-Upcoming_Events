@@ -383,7 +383,7 @@ function get_upcoming_events()
 				$event[$i]['date'] = $lang->upcoming_events_today;
 			}
 
-			$event[$i]['poster'] = $events['username'];
+			$event[$i]['poster'] = htmlspecialchars_uni($events['username']);
 
 
 			if ($events['endtime'] != 0)

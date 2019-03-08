@@ -3,13 +3,13 @@
  *
  *   Upcoming Events for MyBB
  *   Copyright: © 2011 by Christopher Lorentz
- *   
+ *
  *   Website: http://lorus.org/
  *   Author: Lorus
  *   Updated by: Vintagedaddyo
  *   Website: http://community.mybb.com/user-6029.html
  *
- *   
+ *
  *   Last modified: 03/04/2019 by Vintagedaddyo
  *
  ***************************************************************************/
@@ -38,7 +38,7 @@ $l['upcoming_events_PDesc'] = 'Mostra gli eventi imminenti nell indice del forum
 $l['upcoming_events_PWeb'] = 'http://community.mybb.com/user-6029.html';
 $l['upcoming_events_PAuth'] = 'Lorus & Aggiornato da Vintagedaddyo';
 $l['upcoming_events_PAuthSite'] = 'http://community.mybb.com/user-6029.html';
-$l['upcoming_events_PVer'] = '1.32';
+$l['upcoming_events_PVer'] = '1.33';
 $l['upcoming_events_PGUID'] = 'b364c7af6f5fc2440c725fb91197bbd5';
 $l['upcoming_events_PCompat'] = '18*';
 

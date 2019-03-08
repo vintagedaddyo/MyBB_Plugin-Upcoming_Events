@@ -48,6 +48,11 @@ Updated to version 1.32 for MyBB 1.8.x usage by: Vintagedaddyo
 - french
 - italiano
 
+Updated to version 1.33
+
+- xss fix by 0xB9
+
+
 Compatibility:
 
 MyBB 1.8: Yes 

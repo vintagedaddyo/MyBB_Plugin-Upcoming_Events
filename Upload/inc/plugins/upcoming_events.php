@@ -242,10 +242,6 @@ function upcoming_events_index_start()
 
 		$lang->load("upcoming_events");
 
-		//generate heading
-
-		$upcoming_events_text = $lang->sprintf($lang->upcoming_events, $mybb->settings['upcoming_events_maxdisplay'], $mybb->settings['upcoming_events_timerange']);
-
 		//generate eventlist
 
 		$events = get_upcoming_events();
@@ -256,8 +252,10 @@ function upcoming_events_index_start()
 		}
 		else
 		{
+			$i = 0;
 			foreach($events as $event)
 			{
+				if($i >= $mybb->settings['upcoming_events_maxdisplay']) break;
 				if (!empty($event['end']))
 				{
 					$line .= $lang->sprintf($lang->upcoming_events_eventline, $event['link'], $event['date'], $event['start'], $event['end']);
@@ -268,7 +266,20 @@ function upcoming_events_index_start()
 					$line .= $lang->sprintf($lang->upcoming_events_eventline_day, $event['link'], $event['date']);
 					$line .= $lang->sprintf($lang->upcoming_events_created, $event['poster'])."<br />";
 				}
+				$i++;
 			}
+
+			$events_size = count($events);
+			if ($events_size > $mybb->settings['upcoming_events_maxdisplay']) {
+				$line .= '<em><a href="calendar.php">' . $lang->upcoming_events_more_events . '</a></em>';
+			}
+			$timerange = $mybb->settings['upcoming_events_timerange'];
+			//generate heading
+			$upcoming_events_text = $lang->sprintf($lang->upcoming_events, $events_size,
+				($events_size > 1 ? $lang->upcoming_events_event_plural : $lang->upcoming_events_event_singular),
+				$mybb->settings['upcoming_events_timerange'],
+				($timerange > 1 ? $lang->upcoming_events_day_plural : $lang->upcoming_events_day_singular));
+
 		}
 
 		$eventlist .= $line;
@@ -294,7 +305,7 @@ function upcoming_events_portal_start()
 		//generate heading
 
 		$upcoming_events_text = $lang->sprintf($lang->upcoming_events_portal, $mybb->settings['upcoming_events_maxdisplay'], $mybb->settings['upcoming_events_timerange']);
-		$upcoming_events_text .= '<img align="right" src="'.$mybb->settings['bburl'].'/images/toplinks/calendar.png"/>';
+		$upcoming_events_text .= '<img align="right" src="'.$mybb->settings['bburl'].'/images/toplinks/calendar.png"/>';//XXX This icon is unnecessary
 
 		//generate event list
 
@@ -306,9 +317,10 @@ function upcoming_events_portal_start()
 		}
 		else
 		{
+			$i = 0;
 			foreach($events as $event)
 			{
-
+				if($i >= $mybb->settings['upcoming_events_maxdisplay']) break;
 				$event['link'] = truncate($event['link'],7);
 
 				if (!empty($event['end']))
@@ -321,6 +333,12 @@ function upcoming_events_portal_start()
 				}
 
 				$eventlist .= truncate($line,32)."<br />";
+				$i++;
+			}
+
+			$events_size = count($events);
+			if ($events_size > $mybb->settings['upcoming_events_maxdisplay']) {
+				$eventlist .= '<em><a href="calendar.php">' . $lang->upcoming_events_more_events . '</a></em>';
 			}
 		}
 
@@ -358,8 +376,7 @@ function get_upcoming_events()
     WHERE private='0' AND visible='1'
     AND starttime<=".time()."+".$mybb->settings['upcoming_events_timerange']."*24*60*60
 		AND starttime>=".$today."
-    ORDER BY starttime ASC
-		LIMIT ".$mybb->settings['upcoming_events_maxdisplay'].";";
+    ORDER BY starttime ASC;";
 
 	$query = $db->query($statement);
 

@@ -33,7 +33,13 @@
 
 // Plugin Frontend 
 
-$l['upcoming_events'] = "Upcoming Events</strong> <i>(next {1} within {2} days)</i><strong>";
+$l['upcoming_events'] = "Upcoming Events</strong> <i>({1} {2} within {3} {4})</i><strong>";
+$l['upcoming_events_event_singular'] = "event";
+$l['upcoming_events_event_plural'] = "events";
+$l['upcoming_events_day_singular'] = "day";
+$l['upcoming_events_day_plural'] = "days";
+$l['upcoming_events_more_events'] = "More events...";
+
 $l['upcoming_events_portal'] = "Upcoming Events";
 $l['upcoming_events_no_events'] = "No upcoming events";
 $l['upcoming_events_created'] = ' <i>posted by {1}</i>';
